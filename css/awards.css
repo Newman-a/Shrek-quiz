@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --a: #040D12;
+    --b: #198754;
+    --c: #ffff;
+    --bs-btn-active-bg: transparent;
+}
+
+body{
+    background: var(--a);
+}
+
+.gratitude{
+    user-select: none;
+}
+
+.gratitude h1{
+    color: var(--c);
+    font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    -webkit-animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
+
+.gratitude p{
+    color: var(--c);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.efect-text{
+    view-timeline-name: --texto;
+    view-timeline-axis: block;
+
+    animation-timeline: --texto;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.arrow {
+    animation: arrow 1s linear infinite alternate;
+}
+
+@keyframes arrow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.awards{
+    border: none;
+    border-bottom: 1px solid var(--c);
+    border-radius: 10%;
+    background-color: transparent;
+    color: var(--c);
+    font-size: 0.9rem;
+}
+
+.awards:hover{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid var(--b) !important;
+}
+
+.svg img{
+    width: 230px;
+    border-radius: 5px;
+}
+
+.svg-servicio img{
+    width: 250px;
+    border-radius: 5px;
+}
+
+.ocultar{
+    display: none !important;
+}
+
+.modal-oscuro{
+    background-color: var(--a);
+    border-radius: 20px;
+}
+
+
+/* fondo de los modales */
+#premio_one{
+    background: linear-gradient(90deg, rgba(39,94,29, 0.5) 0%, rgba(50,116,25, 0.5) 35%, rgba(50,69,14, 0.5) 66%, rgba(30,35,14, 0.5) 100%) !important;
+}
+
+#premio_two{
+    background: linear-gradient(90deg, rgba(217,198,141, 0.5) 0%, rgba(135,103,65, 0.5) 35%, rgba(95,59,32, 0.5) 66%, rgba(174,89,42, 0.5) 100%) !important;
+}
+
+.acto{
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.efectR {
+    animation: efectR 1.2s ease infinite;
+}
+
+@keyframes efectR {
+    0% {
+        filter: drop-shadow(0 0 10px #fff); /* Agrega un desenfoque al filtro */
+    }
+
+    100% {
+        filter: none; /* Elimina el filtro */
+    }
+}

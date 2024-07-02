@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --a: #040D12;
+    --b: #198754;
+    --c: #ffff;
+}
+
+body{
+    background: var(--a);
+}
+
+#burro, #Quiz{
+    background-color: rgba(25, 135, 84, .1) !important;
+}
+
+.fondo-modal{
+    background-color: var(--a);
+}
+
+.modal-body-one{
+    border-radius: 20px;
+}
+
+.modal-body-quiz{
+    color: #fff !important;
+}
+
+.g{
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+.g:hover{
+    border: none;
+    color: none;
+    box-shadow: none;
+}
+
+#password_burro{
+    color: var(--b); /* Cambia este valor al color deseado */
+    border: 1px solid var(--b);
+    background: var(--a);
+    outline: none;
+    border-radius: 20px;
+}
+
+#password_burro::placeholder{
+    color: var(--b);
+    
+}
+.ocultar{
+    display: none !important;
+}
+
+.preguntas{
+    font-size: 1.0em;
+    filter: drop-shadow( 5px 5px 10px var(--b) );
+}
+
+.dimg{
+    width: 100%;
+}
+
+.dimg img{
+    width: 341.5px;
+    border-radius: 5%;
+}
+
+.titulo{
+    color: var(--b);
+    filter: drop-shadow( 5px 5px 10px var(--b) );
+}
+
+.comenzar-inicio{
+    color:#ffffff; 
+    font-weight: 700; 
+    border: none; 
+    background: transparent; 
+    border-bottom: 1px solid #fff;
+}
+
+.comenzar-inicio:hover {
+    background-color: transparent !important;
+    border-bottom: 1px solid #fff !important;
+    transition: none !important; /* Elimina la transición */
+}
+
+#btnI{
+    background: transparent;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+#btnI:hover{
+    opacity: 1;
+}
+
+#btnI:hover{
+    background: transparent;
+    color: #fff;
+}
+
+#btnSP, #btnII{
+    background: transparent;
+    border: none;
+    color: var(--b);
+    border-bottom: 1px solid var(--b) !important;
+}
+
+.opciones{
+    border: none;
+    border-bottom: 1px solid var(--b);
+    border-radius: 5%;
+    background: none;
+    color: #fff;
+}
+
+.opciones:hover{
+    background: none;
+    -webkit-tap-highlight-color: none;
+    border-bottom: 1px solid #fff;
+    transition: border-bottom 0.5s;
+}
+
+.btn-reset{
+    color: #fff;
+    
+    border: none;
+    border-bottom: 1px solid var(--b) !important;
+}
+
+.btn-reset:hover{
+    background-color: transparent;
+    box-shadow: none !important;
+    color: #fff;
+    border-bottom: 1px solid #fff !important;
+}
+
+.preguntas{
+    color: #fff;
+}
+
+.progress {
+    width: 50%;
+    background-color: #000000;
+    margin: 0 auto;
+    filter: drop-shadow( 5px 5px 10px var(--b) );
+}
+  
+.progress-bar {
+    height: 20px;
+    background: linear-gradient(to right, #198754 20%, #15ff00 40%, #15ff00 60%, #198754 80%);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    transition: width 0.4s ease-in-out;
+    background-size: 200%;
+
+    animation: progresss 10s linear infinite;
+}
+
+.svg img{
+    filter: drop-shadow( 5px 5px 10px var(--b) );
+}
+
+@keyframes progresss {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
+.CRPCI{
+    display: grid;
+    /* width: 250px;
+    height: 300px;
+    margin: 0 auto; */
+    background-color: transparent;
+    border: 1px solid #fff;
+    /* justify-content: center;
+    align-items: center; */
+    grid-gap: 10px;
+
+    border-radius: 1.5rem;
+}
+
+.texto-resultado-padre {
+    display: flex;
+    justify-content: space-evenly; /* Esto distribuirá el espacio uniformemente entre los elementos */
+    align-items: center; /* Esto alineará los elementos verticalmente en el centro */
+}
+
+.texto-resultado, .texto-calificacion {
+    margin: 0; /* Mantiene el margen en 0 para ambos elementos */
+    font-weight: 700;
+    padding: 10px;
+    color: #fff;
+}
+
+.info-CRPCI{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.pci-1, .pci-2, .pci-3{
+    width: 100px;
+    height: 80px;
+    background-color: var(--a);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.TP, .RC, .RI{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.RC{
+    color: #07cc00;
+}
+
+.RI{
+    color: #cc0000;
+}
+
+.TP-texto, .RC-texto, .RI-texto{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/*Fin del contenedor de la informacion del total preguntas, respuestas correctas y respuestas incorrectas*/
+
+/*Texto de felicitaciones*/
+
+.texto-felicitaciones{
+    text-align: justify;
+    padding: 0px 10px;
+    margin: 0;
+    color: #fff;
+}
+
+.svg_cofre img{
+    width: 50px;
+    animation: cofre 1.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+}
+
+
+ @keyframes cofre {
+    0%,
+    100% {
+              transform: rotate(0deg);
+              transform-origin: 50% 100%;
+    }
+    10% {
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+              transform: rotate(4deg);
+    }
+    80% {
+              transform: rotate(-2deg);
+    }
+    90% {
+              transform: rotate(2deg);
+    }
+  }
+
+.svg img{
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    animation: move-vector 4s linear infinite;
+}
+
+
+
+@keyframes move-vector {
+    0%{
+        transform: translateY(15px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(15px);
+    }
+}
+
+b{
+    color: #07cc00;
+}
+
+.btn-reproducir{
+    border: none;
+    background: transparent;
+    color: var(--b);
+    margin-left: 10px;
+    transition: color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-reproducir:hover{
+    color: #fff;
+}
+
+.efectR {
+    color: #fff;
+    animation: efectR 1.2s ease infinite;
+}
+
+@keyframes efectR {
+    0% {
+        filter: drop-shadow(0 0 10px #fff); /* Agrega un desenfoque al filtro */
+    }
+
+    100% {
+        filter: none; /* Elimina el filtro */
+    }
+}
+
+
+#btn_home, #btn_home_end{
+    background: none;
+    border: none;
+}
+
+.boxMusic {
+    height: 30px;
+}
+
+.nselect{
+    user-select: none;
+}
+
+.nameMusic {
+    color: #fff;
+    opacity: 0.5;
+    transition: opacity 0.5s ease; /* La animación durará 0.5 segundos */
+}
+
+.spg{
+    color: #fff;
+    opacity: 0.5;
+}
+
+.efectoSpan{
+    
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 0.5;
+    }
+  }
+
+#btnvi{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--b);
+}
+
+#btnvi:hover{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+#letras_secretas{
+    color: var(--b); /* Cambia este valor al color deseado */
+    border: 1px solid var(--b);
+    background: var(--a);
+    outline: none;
+    border-radius: 20px;
+}
+
+#letras_secretas::placeholder{
+    color: var(--b);
+    
+}
+
+#cofre{
+    background-color: rgba(25, 135, 84, .1) !important;
+}
